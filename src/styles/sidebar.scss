@@ -1,0 +1,64 @@
+@import './variables.scss';
+//menu hover
+.el-aside {
+  background-color: $sidebar-color;
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  border-right: solid 1px #e6e6e6;
+  text-align: left;
+  list-style: none;
+  width: 210px !important;
+  overflow-x: hidden !important;
+  overflow-y: auto ;
+}
+//二级菜单样式
+.el-submenu > ul > li >.el-submenu__title {
+  background-color: $sidebar-secondary-color;
+}
+//二级无拓展菜单
+.el-aside > .el-menu > .el-submenu > ul > .el-menu-item {
+  background-color: $sidebar-secondary-color;
+}
+.el-menu {
+  border-right: 0 !important;
+  background-color: $sidebar-color;
+}
+.submenu-title-noDropdown,
+.el-submenu__title {
+  background-color: $sidebar-color;
+  color: $color-text-primary !important;
+  &:hover {
+    background-color: $menuHover !important;
+  }
+  &:focus {
+    background-color: $menuHover !important;
+  }
+}
+.is-active>.el-submenu__title {
+  //color: $subMenuActiveText !important;
+  //background-color: $menuActive;
+}
+
+.el-submenu .el-menu-item {
+  background-color: $sidebar-third-color;
+  color: $color-text-primary;
+  &:hover {
+    background-color: $subMenuHover;
+  }
+}
+
+.el-menu-item i {
+  color: $color-text-primary !important;
+}
+
+.el-submenu__title i {
+  color: $color-text-primary !important;
+}
+
+.el-menu-item.is-active {
+  color:  $button-hover !important;
+  font-weight: $font-weight-title;
+  background-color: $subMenuActive !important;
+}

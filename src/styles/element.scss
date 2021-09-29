@@ -1,0 +1,47 @@
+@import "~@/styles/variables.scss";
+.button-more {
+  margin-left: 10px;
+  background-color: $color-primary;
+  border-color: $color-primary;
+}
+
+::v-deep .el-radio-button span:after {
+  content: "\2714";
+  display: inline-block;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: margin 250ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 100ms,
+  -webkit-transform 250ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  -moz-transition: margin 250ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 100ms,
+  -moz-transform 250ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  -o-transition: margin 250ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 100ms,
+  -o-transform 250ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transition: margin 250ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 100ms,
+  transform 250ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+::v-deep .el-radio-button__orig-radio:checked + span:after {
+  margin-left: 12px;
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  transform: scale(1.25);
+  -webkit-transition: -webkit-transform 500ms
+  cubic-bezier(0.175, 0.885, 0.32, 1.275) 250ms,
+  margin 500ms,
+  -webkit-transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 250ms;
+  -moz-transition: -moz-transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275)
+  250ms,
+  margin 500ms,
+  -moz-transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 250ms;
+  -o-transition: -o-transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275)
+  250ms,
+  margin 500ms,
+  -o-transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 250ms;
+  transition: transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 250ms,
+  margin 500ms, transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 250ms;
+}

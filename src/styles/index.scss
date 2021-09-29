@@ -1,0 +1,179 @@
+@import './sidebar.scss';
+@import './variables.scss';
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#app {
+  height: 100%;
+}
+
+.el-card {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15)!important;
+}
+.el-table {
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.padding-content {
+  padding: 4px 0;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+//清除浮动
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+:focus{
+  outline: 0;
+}
+
+/*1.显示滚动条：当内容超出容器的时候，可以拖动：*/
+.el-drawer__body {
+  overflow: auto;
+}
+
+//dialog组件适配移动端
+@media screen and (max-width: 480px) {
+  .el-dialog__wrapper .el-dialog {
+    width: 95% !important;
+  }
+  .el-dialog__wrapper .el-dialog .el-dialog__body {
+    overflow: auto
+  }
+}
+
+//多表头背景色
+.el-table thead.is-group th {
+  background: #ffffff !important;
+}
+.search__container {
+  margin-bottom: 20px;
+}
+.back__item {
+  float: right;
+  margin-top: 10px;
+}
+.delete__btn{
+  background-color: #dd514c !important;
+  border-color:  #dd514c !important;
+}
+.button-dashed {
+  width: 100%;
+  border: 1px dashed $color-line !important;
+}
+.header__button {
+  margin-bottom: 20px !important;
+  width: 100%;
+}
+
+//表格展开样式
+.scope__title {
+  color: $color-title;
+  font-weight: $font-weight-title;
+}
+.sub__title {
+  color: $color-text-secondary;
+  font-weight: $font-weight-title;
+  width: 14%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 8px;
+}
+.sub__content {
+  color: $color-content;
+  width: 86%;
+  display: inline-block;
+  .sub__content-tag {
+    margin: 6px;
+  }
+}
+
+//门店下拉菜单样式
+.store__city {
+  float: right;
+  margin-right: 14px;
+  color: #8492a6;
+}
+
+//状态圆点
+.breath_light_normal {
+  display: inline-block;
+  width: 10px; /* 宽度 */
+  height: 10px; /* 高度 */
+  border: $color-success-normal 1px solid;
+  border-radius: 50%;
+  background: $color-success-normal; /* 背景色 */
+  margin-right: 10px; /* 外边距 */
+}
+.breath_light_abnormal {
+  display: inline-block;
+  width: 10px; /* 宽度 */
+  height: 10px; /* 高度 */
+  border: $color-error-normal 1px solid;
+  border-radius: 50%;
+  background: $color-error-normal; /* 背景色 */
+  margin-right: 10px; /* 外边距 */
+}
+.v-note-wrapper{
+  z-index: 0 !important
+}
+
+
+
+

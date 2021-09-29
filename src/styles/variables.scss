@@ -1,0 +1,63 @@
+$f1: 80px; // 阿拉伯数字信息，如：金额、时间等
+$f2: 40px; // 页面大标题，如：结果、控状态等信息单一页面
+$f3: 36px; // 大按钮字体
+$f4: 28px; // 首要层级信息，基准的，可以是连续的，如：列表标题、消息气泡
+$f5: 24px; // 次要描述信息，服务于首要信息并与之关联，如：列表摘要
+$f6: 20px; // 辅助信息，需弱化的内容，如：链接、小按钮
+$f7: 16px; // 说明文本，如：版权信息等不需要用户关注的信息
+$f8: 12px; // 十分小
+
+$color-primary: #778beb; // 品牌颜色
+$color-secondary: lighten($color-primary, 10%);
+$color-tertiary: lighten($color-primary, 20%);
+
+$color-primary-dark :#546de5;
+
+$color-line: #ececec; // 分割线颜色
+$color-bg: #ebebeb; // 背景色
+
+$color-grey :#999999;
+
+$color-text-primary: #000000; // 主内容
+$color-text-long: #353535; // 大段说明的主要内容
+$color-text-secondary: #888888; // 次要内容
+$color-text-placeholder: #b2b2b2; // 缺省值
+
+$color-link-normal: #1C5194; // 链接用色
+$color-link-press: lighten($color-link-normal, 10%);
+$color-link-disable: lighten($color-link-normal, 20%);
+
+$color-complete-normal: $color-primary; // 完成用色
+$color-complete-press: lighten($color-complete-normal, 10%);
+$color-complete-disable: lighten($color-complete-normal, 20%);
+
+$color-success-normal: #67C23A; // 成功用色
+$color-success-press: lighten($color-success-normal, 10%);
+$color-success-disable: lighten($color-success-normal, 20%);
+
+$color-error-normal: #e64340; // 出错用色
+$color-error-press: lighten($color-error-normal, 10%);
+$color-error-disable: lighten($color-error-normal, 20%);
+
+$color-title: #909399; //标题颜色
+$font-weight-title: 700; //标题加粗
+$color-content: #606266; //table内容(待定)
+
+$sidebar-color: $color-primary; // 侧边栏颜色
+$sidebar-secondary-color: #ea8685; //二级侧边栏颜色
+$sidebar-third-color: #e66767; //三级侧边栏颜色
+$menuHover: #686de0;
+$menuActive: $color-tertiary;
+
+$sub-sidebar-color: #130f40; //二级菜单栏颜色
+$subMenuHover:#4834d4;
+$subMenuActiveText: $color-title;
+$subMenuActive: #30336b;
+
+$tag-ready-color: #F4C773; //准备
+$tag-process-color: $color-primary; //正在进行
+$tag-cancel-color: #909399; //取消
+$tag-success-color: $color-success-normal; //完成
+$tag-fail-color: $color-error-normal; //出错或失败
+
+$button-hover: #fff8ea;
